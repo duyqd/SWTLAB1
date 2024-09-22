@@ -90,9 +90,10 @@ static class CommonDefectsExample
             int zero = 0;
             int result = 10 / zero;
         }
-        catch (Exception e) // Catching a general exception
+        catch (Exception e)
         {
-            Console.WriteLine("Something went wrong"); // Generic error message without specific handling
+            Console.WriteLine("Something went wrong: " + e.Message); // In thông điệp lỗi của ngoại lệ
         }
+
     }
 }
